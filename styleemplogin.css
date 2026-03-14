@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body {
+	margin: 0px;
+}
+
+header {
+	background: black;
+	color: white;
+	padding: 8px 20px 6px 40px;
+	height: 50px;
+}
+
+header h1 {
+	display: inline;
+	font-family: 'Lobster', cursive;
+	font-weight: 400;
+	font-size: 32px;
+	float: left;
+	margin-top: 0px;
+	margin-right: 10px;
+}
+
+nav ul {
+	display: inline;
+	padding: 0px;
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style-type: none;
+	color: white;
+	float: left;
+	margin-left: 12px;
+
+
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+
+
+nav ul ul {
+	display: none;
+	position: absolute;
+}
+
+#navli ul li ul:hovar {
+	visibility: visible;
+	display: block;
+}
+
+
+
+
+
+#navli {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.homered {
+	background-color: red;
+	padding: 30px 10px 22px 10px;
+}
+
+.divider {
+	background-color: red;
+	height: 5px;
+}
+
+.homeblack:hover {
+	background-color: blue;
+	padding: 30px 10px 21px 10px;
+
+}
+
+table {
+	margin: 0px;
+	border-collapse: collapse;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+th,
+td {
+	text-align: center;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+tr:hover {
+	background-color: #76D7C4;
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.p-t-20 {
+	padding-top: 20px;
+}
+
+.btn {
+	line-height: 40px;
+	display: inline-block;
+	padding: 0 25px;
+	cursor: pointer;
+	font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+	color: #fff;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.btn--radius {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.btn--green {
+	background: #57b846;
+}
+
+.banner-wrapper {
+	width: 100%;
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner-slideshow {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.slide {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity .7s ease;
+}
+
+.slide.active {
+	opacity: 1;
+}
+
+/* Nút chuyển */
+.nav-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.4);
+	padding: 12px;
+	border: none;
+	font-size: 24px;
+	color: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.prev {
+	left: 15px;
+}
+
+.next {
+	right: 15px;
+}
+
+/* Dot */
+.dots {
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+	text-align: center;
+	z-index: 6;
+}
+
+.dot {
+	width: 12px;
+	height: 12px;
+	background: #bbb;
+	display: inline-block;
+	margin: 0 5px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.dot.active {
+	background: white;
+}
+
+.hero-wrapper {
+	position: relative;
+	width: 100%;
+	height: 70vh;
+	overflow: hidden;
+}
+
+.hero-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.hero-wrapper img.active {
+	opacity: 1;
+}
+
+/* Nút trái phải */
+.nav-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.35);
+	border: none;
+	color: white;
+	padding: 14px 20px;
+	font-size: 28px;
+	cursor: pointer;
+	border-radius: 50%;
+	z-index: 5;
+	transition: 0.3s;
+}
+
+.nav-btn:hover {
+	background: rgba(0, 0, 0, 0.55);
+}
+
+.nav-btn.prev {
+	left: 25px;
+}
+
+.nav-btn.next {
+	right: 25px;
+}
+
+/* Dot indicators */
+.dots {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	z-index: 6;
+}
+
+.dot {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 0 6px;
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.dot.active {
+	background: white;
+	transform: scale(1.2);
+}
+
+/* Base button */
+.btn {
+	padding: 14px 28px;
+	border-radius: 14px;
+	font-size: 1.15em;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+	transition: transform 0.15s ease, box-shadow 0.3s ease;
+	user-select: none;
+}
+
+/* RUNG KHI CLICK */
+.btn:active {
+	animation: btnShake 0.2s linear;
+	transform: scale(0.96);
+}
+
+@keyframes btnShake {
+	0% {
+		transform: translateX(0);
+	}
+
+	30% {
+		transform: translateX(-3px);
+	}
+
+	60% {
+		transform: translateX(3px);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* GLOW khi hover */
+.btn:hover {
+	box-shadow: 0 0 18px rgba(255, 255, 255, 0.4);
+}
+
+/* COLORS — gradient neon */
+.btn-green {
+	background: linear-gradient(135deg, #00d98d, #00a86b);
+	color: white;
+}
+
+.btn-green:hover {
+	background: linear-gradient(135deg, #00f2a5, #00c27c);
+}
+
+.btn-yellow {
+	background: linear-gradient(135deg, #ffd86f, #ffb800);
+	color: #3c2f00;
+}
+
+.btn-yellow:hover {
+	background: linear-gradient(135deg, #ffe89b, #ffcb33);
+}
+
+.btn-red {
+	background: linear-gradient(135deg, #ff6a6a, #d84343);
+	color: white;
+}
+
+.btn-red:hover {
+	background: linear-gradient(135deg, #ff8a8a, #e25555);
+}
+
+/* ICON NÚT */
+.btn i {
+	font-size: 1.3em;
+}
+
+/* INFO message */
+.info-label,
+.info-error {
+	padding: 10px 14px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	display: inline-block;
+	font-weight: 500;
+}
+
+.info-label {
+	background: #eef5ff;
+	border-left: 4px solid #007bff;
+}
+
+.info-error {
+	background: #ffeaea;
+	border-left: 4px solid #d90000;
+}

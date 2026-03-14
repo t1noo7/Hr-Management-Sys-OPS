@@ -41,7 +41,6 @@ The **HR Management System** is a web-based application developed using **PHP** 
 - **Backend**: PHP
 - **Frontend**: HTML, CSS, JavaScript
 - **Database**: MySQL (via phpMyAdmin)
-- **Timer**: cron
 - **Web Server**: Apache (provided by XAMPP)
 
 ---
